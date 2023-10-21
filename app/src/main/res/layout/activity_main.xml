@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ImgFotografia"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/default_image"
+        android:layout_marginTop="20dp" />
+
+
+    <Spinner
+        android:id="@+id/cbxPaises"
+        android:layout_width="374dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/ImgFotografia"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:id="@+id/btnAgregarPais"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/cbxPaises"
+        android:layout_marginTop="-72dp"
+        android:text="Añadir" />
+
+    <Button
+        android:id="@+id/btnGuardarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbxPaises"
+        android:layout_marginTop="259dp"
+        android:text="Guardar Contacto" />
+
+    <Button
+        android:id="@+id/btnVerContactos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbxPaises"
+        android:layout_marginTop="320dp"
+        android:text="Contacto Salvados" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAgregarPais"
+        android:layout_marginTop="45dp"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNombre"
+        android:layout_marginTop="8dp"
+        android:hint="Teléfono" />
+
+    <EditText
+        android:id="@+id/txtNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTelefono"
+        android:layout_marginTop="8dp"
+        android:hint="Nota" />
+
+</RelativeLayout>
